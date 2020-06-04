@@ -39,18 +39,18 @@
 
                 <div class="field">
                     <label for="name">Nome da entidade</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
                 </div>
 
                 <div class="field-group">
                     <div class="field">
                         <label for="address">Endereço</label>
-                        <input type="text" name="address">
+                        <input type="text" name="address" required>
 
                     </div>
                     <div class="field">
                         <label for="address">Número/Complemento</label>
-                        <input type="number" name="address2">
+                        <input type="number" name="address2" required>
                     </div>
                 </div>
 
@@ -58,15 +58,15 @@
 
                     <div class="field">
                         <label for="state">Estado</label>
-                        <select name="uf">
+                        <select name="uf" required>
                             <option value="">Selecione o estado</option>
-                            
+
                         </select>
                     </div>
 
                     <div class="field">
                         <label for="state">Cidade</label>
-                        <select name="city" disabled>
+                        <select name="city" disabled required>
                             <option value="">Selecione a cidade</option>
                         </select>
 
@@ -75,11 +75,49 @@
                 </div>
             </fieldset>
 
+
+            <fieldset>
+                <legend>
+                    <h2>Itens de coleta </h2>
+                </legend>
+
+                <div class="items-grid">
+                    <li data-id="1">
+                        <img src="icons/lampadas.svg" alt="lampadas">
+                        <span>Lampadas</span>
+                    </li>
+
+                    <li data-id="2">
+                        <img src="icons/baterias.svg" alt="Pilhas e Baterias">
+                        <span>Pilhas e Baterias</span>
+                    </li>
+
+                    <li data-id="3">
+                        <img src="icons/papeis-papelao.svg" alt="Papéis e Papelão">
+                        <span>Papéis e Papelão</span>
+                    </li>
+
+                    <li data-id="4">
+                        <img src="icons/eletronicos.svg" alt="Resídos e Eletronicos">
+                        <span>Resídos e Eletronicos</span>
+                    </li>
+
+                    <li data-id="5">
+                        <img src="icons/organicos.svg" alt="Resídos Organicos">
+                        <span>Resídos Organicos</span>
+                    </li>
+
+                    <li data-id="6">
+                        <img src="icons/oleo.svg" alt="Óleo de Cozinha">
+                        <span>Óleo de Cozinha</span>
+                    </li>
+                </div>
+
+                <input type="hidden" name="items">
+
+            </fieldset>
             <button type="submit">Cadastra ponto de coleta</button>
-
         </form>
-
-
     </div>
 
 
