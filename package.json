@@ -1,0 +1,24 @@
+{
+  "name": "NLW",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/italodaniel/NLW.git"
+  },
+  "author": "Daniel italo abreu dos santos ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/italodaniel/NLW/issues"
+  },
+  "homepage": "https://github.com/italodaniel/NLW#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
