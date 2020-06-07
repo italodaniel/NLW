@@ -1,6 +1,8 @@
 const express = require("express")
 const nunjucks = require("nunjucks")
 
+const db = require("./database/db")
+
 
 const server = express()
 
@@ -22,6 +24,16 @@ server.get("/create-point", function(req, res){
 })
 
 server.get("/search", function(req, res){
+
+    db.all(`SELECT * FROM places`, function(err, rows){
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log("Aqui estão seu registros");
+        console.log(rows);
+    })
+
     return res.render("search-results.html")
 })
 
